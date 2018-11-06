@@ -1,3 +1,4 @@
+
 class SearchAddressController < ApplicationController
 
   def search 
