@@ -3,27 +3,32 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
+    <>
       <NavLink
         to="/"
         exact
-        activeStyle={{background: 'white', color: '#5385d4'}}>Home</NavLink>
+        activeStyle={{background: '#f9f7f7', color: '#5385d4'}}>Home</NavLink>
 
       <NavLink
         to="/candidates"
         exact
-        activeStyle={{background: 'white', color: '#5385d4'}}>Candidates</NavLink>
+        activeStyle={{background: '#f9f7f7', color: '#5385d4'}}>Candidates</NavLink>
+
+      <NavLink
+        to="/questions"
+        exact
+        activeStyle={{background: '#f9f7f7', color: '#5385d4'}}>Questions</NavLink>
 
       <NavLink
         to="/polls"
         exact
-        activeStyle={{background: 'white'}}>Polling Locations</NavLink>
+        activeStyle={{background: '#f9f7f7', color: '#5385d4'}}>Polling Locations</NavLink>
 
       <NavLink
         to="/earlyvoting"
         exact
-        activeStyle={{background: 'white'}}>Early Voting</NavLink>
-    </div>
+        activeStyle={{background: '#f9f7f7', color: '#5385d4'}}>Early Voting</NavLink>
+    </>
 )}
 
 export default NavBar

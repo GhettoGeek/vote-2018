@@ -1,13 +1,13 @@
 import React from 'react'
 import AddressForm from './AddressForm'
-import VoterInfo from './VoterInfo'
+import Contests from './Contests'
 
 const Home = (props) => {
   return (
   <>
   <h1 id="vote-h1">Vote 2018</h1>
   <AddressForm/>
-  <VoterInfo voterInfo={props.voterInfo} />
+  <Contests voterInfo={props.voterInfo} />
   </>)
 }
 

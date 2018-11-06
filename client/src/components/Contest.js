@@ -7,7 +7,7 @@ function Contest (props) {
     <div className="contest">
       <h1>Candidates for {props.office} in {props.district}</h1>
       <div className="candidates">
-        {props.candidates.map(x => <Candidate name={x.name} party={x.party} channels={x.channels} />)}
+        {props.candidates.map(x => <Candidate key= {x.name} name={x.name} party={x.party} channels={x.channels} />)}
       </div>
     </div>
     )
