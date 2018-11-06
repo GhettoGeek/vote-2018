@@ -15,6 +15,10 @@ label {
   color: grey;
 }
 
+.success {
+  color: grey;
+}
+
 .error {
   padding: 3rem;
 }
