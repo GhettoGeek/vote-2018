@@ -2,7 +2,7 @@
 class SearchAddressController < ApplicationController
 
   def search 
-    key = ENV['KEY']
+    key = ENV['API_KEY']
   
     address = params[:address].split.join("+")  
 
