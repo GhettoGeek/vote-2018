@@ -10,7 +10,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Typekit kitId="sff0zbx" />
         <nav className="nav"><NavBar></NavBar></nav>
          <Main voterInfo={this.props.voterInfo}/>
       </div>
@@ -23,3 +22,4 @@ const mapStateToProps = state => {
 }
 
 export default withRouter(connect(mapStateToProps)(App));
+

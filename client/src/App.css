@@ -11,6 +11,9 @@ body {
   font-family: "Brandon Grotesque";
 }
 
+.error {
+  padding: 3rem;
+}
 
 .nav {
   width: 350px;
@@ -258,6 +261,7 @@ body {
 
   .main {
     margin: 0;
+    padding: 4rem 0;
   }
 
   .contest {
@@ -294,7 +298,6 @@ body {
 
   .error {
     text-align: center;
-    padding: 3rem;
   }
 }
 
@@ -317,6 +320,6 @@ body {
   }
 
   .main {
-    padding: 0 1rem;
+    padding: 2rem 1rem;
   }
 }
