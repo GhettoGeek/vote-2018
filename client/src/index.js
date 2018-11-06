@@ -7,7 +7,6 @@ import * as serviceWorker from './serviceWorker';
 
 //Added
 import { BrowserRouter as Router } from 'react-router-dom';
-import 'semantic-ui-css/semantic.min.css';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
