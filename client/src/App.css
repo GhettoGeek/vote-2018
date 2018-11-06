@@ -2,13 +2,17 @@
   display: flex;
 }
 
-h2:first-child {
-  font-family: "Brandon Grotesque";
-}
-
 body {
   font-size: 16px;
-  font-family: "Brandon Grotesque";
+  font-family: "brandon-grotesque";
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+label {
+  color: grey;
 }
 
 .error {
@@ -40,6 +44,7 @@ body {
   text-align: center;
   color: white;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .nav a:hover {
@@ -72,19 +77,20 @@ body {
 
 .form input[type=text] {
   border: solid 1px lightgrey;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 3px;
   padding: 1rem;
-  width: 100%;
+  width: 90%;
 }
 
 .form input[type=submit] {
   border-radius: 3px;
+  font-family: "brandon-grotesque";
   padding: 1.2rem;
   margin-top: 3rem;
   width: 100%;
   background-color: #f1f1f1;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: #e45c5c;
   color: white;
   font-weight: bold;
@@ -131,7 +137,7 @@ body {
 
 .poll-wrapper h1, .candidates-h1 {
   color: #e45c5c;
-  font-size: 3rem;
+  font-size: 1.7rem;
   text-align: center;
   margin-bottom: 5rem;
   padding-top: 5rem;
@@ -162,7 +168,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  width: 100%;
+  max-width: 100%;
   padding-bottom: 3rem;
   margin-bottom: 5rem;
   color: #6b6b6b;
@@ -249,7 +255,7 @@ body {
   .nav a {
     display: inline;
     margin: 0;
-    padding: 2rem 0;
+    padding: 1.6rem 0;
   }
 
   .main {
@@ -292,14 +298,23 @@ body {
   .error {
     text-align: center;
   }
+
+  .question {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .nav a {
+    font-size: .8rem;
+  }
+
+  .nav {
+    padding: 0rem 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .nav a {
-    font-size: 1rem;
-    word-wrap: break-word;
-  }
-
+ 
   .address-form {
     width: 90%;
   }
@@ -313,6 +328,6 @@ body {
   }
 
   .main {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
   }
 }
