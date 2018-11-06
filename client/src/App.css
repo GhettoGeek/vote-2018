@@ -220,6 +220,7 @@ label {
 .candidates {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .D {
@@ -293,7 +294,6 @@ label {
 @media only screen and (max-width: 700px) {
   .candidates {
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
   }
 
