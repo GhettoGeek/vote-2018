@@ -52,6 +52,15 @@ label {
   background-color: #f9f7f7;
 }
 
+.contest a {
+  text-decoration: none;
+  color: #5385d4;
+}
+
+.contest a:hover {
+  color: #8eadde;
+}
+
 .main {
   width: 100%;
   min-height: 100vh;
