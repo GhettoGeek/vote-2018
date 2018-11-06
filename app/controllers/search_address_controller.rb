@@ -4,8 +4,7 @@ class SearchAddressController < ApplicationController
   def search 
     key = ENV['KEY']
   
-    address = params[:address]
-    
+    address = params[:address].split.join("+")    
 
     response = RestClient::Request.execute(
       method: :get, 
