@@ -259,12 +259,17 @@ label {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
   }
 
   .nav a {
     display: inline;
     margin: 0;
-    padding: 1.6rem 0;
+    padding: 2rem 0;
+  }
+
+  .poll p {
+    text-align: center;
   }
 
   .main {
