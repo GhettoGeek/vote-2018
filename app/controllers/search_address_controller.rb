@@ -4,14 +4,16 @@ class SearchAddressController < ApplicationController
   def search 
     key = ENV['KEY']
   
-    address = params[:address].split.join("+")    
+    address = params[:address].split.join("+")  
+
+    url = "https://www.googleapis.com/civicinfo/v2/voterinfo?address=#{address}&key=#{key}"
 
     response = RestClient::Request.execute(
       method: :get, 
-      url: "https://www.googleapis.com/civicinfo/v2/voterinfo?address=#{address}&key=#{key}",
+      url: "#{url}",
     )
 
-      render json: response 
+    render json: response 
 
   end
 
