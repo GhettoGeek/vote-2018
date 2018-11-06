@@ -3,7 +3,7 @@ import Contest from './Contest'
 import { Link } from 'react-router-dom'
 
 const Contests = (props) => {
-  
+ 
   const contests = props.voterInfo.contests
 
   if (contests) {
