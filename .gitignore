@@ -24,3 +24,6 @@
 
 # Ignore ENV/API Keys
 .env
+
+# Production
+/public

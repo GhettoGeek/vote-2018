@@ -1,0 +1,32 @@
+{
+  "name": "vote-2018",
+  "version": "1.0.0",
+  "description": "voter information",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avelineamour/vote-2018.git"
+  },
+  "keywords": [
+    "vote",
+    "election",
+    "api",
+    "midterms"
+  ],
+  "author": "Razelle McCarrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avelineamour/vote-2018/issues"
+  },
+  "homepage": "https://github.com/avelineamour/vote-2018#readme"
+}
