@@ -14,10 +14,13 @@ const Questions = (props) => {
     </div>
     )
   } 
-  else if (props.match && !contests) {
+  else if (contests && contests.filter(x => x.ballotTitle).length === 0) {
+    return <h3 className="error">There are no questions available at this time</h3>
+  }
+  else {
     return <h3 className="error">Oh no! You didn't enter a valid residential address. Navigate back <Link to="/">home</Link> to enter your address, then come back!</h3>
   }
-  else return null
+
 }
 
 export default Questions

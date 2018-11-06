@@ -1,6 +1,5 @@
 .App {
   display: flex;
-  /* height: 100vh || 100%; */
 }
 
 h2:first-child {
@@ -84,9 +83,14 @@ body {
   background-color: #f1f1f1;
   font-family: "Brandon Grotesque";
   font-size: 1.5rem;
-  color: #e45c5c;
+  background-color: #e45c5c;
+  color: white;
   font-weight: bold;
   border: .5px lightgrey solid;
+}
+
+.form input[type=submit]:hover {
+  background-color: #5385d4;
 }
 
 .form input[type=text]:focus { 
@@ -263,6 +267,35 @@ body {
   .contest-wrapper, .question-wrapper, .poll-wrapper {
     width: 90%;
   }
+
+  .question-wrapper {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .candidates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .candidate {
+    margin-bottom: 3rem;
+  }
+
+  .contest {
+    padding-bottom: 0;
+  }
+
+  .contest h1 {
+    padding: 2rem 0 0 0;
+    margin-bottom: 3rem;
+  }
+
+  .error {
+    text-align: center;
+    padding: 3rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -285,9 +318,5 @@ body {
 
   .main {
     padding: 0 1rem;
-  }
-
-  .error {
-    text-align: center;
   }
 }

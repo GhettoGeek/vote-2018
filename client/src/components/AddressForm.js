@@ -1,6 +1,9 @@
 import React from 'react'
-// import { Button, Form } from 'semantic-ui-react'
 import { connect } from 'react-redux'
+
+import {
+	withRouter
+} from 'react-router-dom';
 import { fetchVoterInformation } from '../actions/voterInformationActions'
 
 class AddressForm extends React.Component{
@@ -21,6 +24,7 @@ class AddressForm extends React.Component{
     this.setState({
       address: ""
     })
+    this.props.history.push('/candidates');
   }
 
 
@@ -41,4 +45,4 @@ const mapStateToProps = state => {
  return {address: state.voterInformation.address}
 }
 
-export default connect(mapStateToProps, {fetchVoterInformation})(AddressForm)
+export default withRouter(connect(mapStateToProps, {fetchVoterInformation})(AddressForm))
