@@ -24,7 +24,6 @@ class AddressForm extends React.Component{
     this.setState({
       address: ""
     })
-    this.props.history.push('/candidates');
   }
 
 
